@@ -23,10 +23,18 @@ print(str1[2:5])  # tho
 print(str1[3:])  # honX, with end parameter not defined, substring goes to the end of the string
 print(str1[::2])  # PtoX, step goes by 2 each time, from start to the end
 
+# Concatenation and multiplication
 firstname, lastname = "John", "Doe"
 fullname = firstname + " " + lastname
 print(fullname)  # John Doe
 print(" ".join([firstname, lastname]))  # John Doe, join method on strings
 print(firstname * 2)  # JohnJohn, repetition as multiplication with integer value
 
-
+# Operations on strings
+print(str1.islower())  # False
+print(str1.upper())  # PYTHOX
+print(str1.lower())  # pythox
+print(str1.replace("X", "R"))  # PythoR
+print(len(str1))  # 6
+print(str1.index("th"))  # 2
+print(str1.find("yt"))  # 1
